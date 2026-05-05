@@ -7,26 +7,68 @@
 
 <body>
 
-    <header>
-        <h1>Food Ordering Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="cart.html">Cart</a>
-        </nav>
-    </header>
+<header>
+    <h1>Food Ordering Website</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
 
-    <section class="home">
-        <h2>Menu</h2>
+<section class="home">
 
-        <div class="food-list">
-            <div class="food-item">Pizza - $12</div>
-            <div class="food-item">Burger - $10</div>
-            <div class="food-item">Pasta - $11</div>
-            <div class="food-item">Fries - $6</div>
-            <div class="food-item">Chicken - $14</div>
+    <h2>Menu</h2>
+
+    <!-- Budget Filter -->
+    <div class="budget-filter">
+        <button onclick="filterFood('all')" class="filter-btn">All</button>
+        <button onclick="filterFood(10)" class="filter-btn">Under $10</button>
+        <button onclick="filterFood(15)" class="filter-btn">Under $15</button>
+        <button onclick="filterFood(20)" class="filter-btn">Under $20</button>
+    </div>
+
+    <p id="filter-message">Showing all meals</p>
+
+    <!-- Food List -->
+    <div class="food-list">
+
+        <div class="food-item" data-price="12">
+            <a href="food-details.html"><h3>Pizza</h3></a>
+            <p>$12</p>
+            <button class="order-btn">Add to Cart</button>
         </div>
-    </section>
+
+        <div class="food-item" data-price="10">
+            <a href="food-details.html"><h3>Burger</h3></a>
+            <p>$10</p>
+            <button class="order-btn">Add to Cart</button>
+        </div>
+
+        <div class="food-item" data-price="11">
+            <a href="food-details.html"><h3>Pasta</h3></a>
+            <p>$11</p>
+            <button class="order-btn">Add to Cart</button>
+        </div>
+
+        <div class="food-item" data-price="6">
+            <a href="food-details.html"><h3>Fries</h3></a>
+            <p>$6</p>
+            <button class="order-btn">Add to Cart</button>
+        </div>
+
+        <div class="food-item" data-price="14">
+            <a href="food-details.html"><h3>Chicken</h3></a>
+            <p>$14</p>
+            <button class="order-btn">Add to Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
 
 </body>
 </html>
