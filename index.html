@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Online Food Ordering Website</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Food Ordering Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="cart.html">Cart</a>
-            <a href="order-history.html">Order History</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
-    </header>
+<header>
+    <h1>Foodie</h1>
+    <p>Delicious at your door</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart</a>
+        <a href="order-history.html">Order History</a>
+        <a href="tracking.html">Tracking</a>
+    </nav>
+</header>
 
-    <!-- Home Section -->
-    <section class="home">
-        <h2>Welcome to Online Food Ordering</h2>
-        <p>Order your favourite food quickly and easily from our website.</p>
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Delicious Food,<br>Delivered Fast</h2>
+        <p>Order your favorite meals and get them delivered to your door.</p>
 
-        <h3>Featured Food</h3>
-        <div class="food-list">
-            <div class="food-item">Pizza - $12</div>
-            <div class="food-item">Burger - $10</div>
-            <div class="food-item">Pasta - $11</div>
+        <a href="menu.html">
+            <button class="order-btn">Order Now</button>
+        </a>
+
+        <a href="menu.html">
+            <button class="secondary-btn">View Menu</button>
+        </a>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" alt="food">
+    </div>
+</section>
+
+<!-- FEATURED -->
+<section class="home">
+    <h2>Featured Dishes</h2>
+
+    <div class="food-list">
+
+        <div class="food-item">
+            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65" alt="">
+            <h3>Pizza</h3>
+            <p>$12</p>
+            <button class="order-btn" onclick="addToCart('Pizza', 12)">Add to Cart</button>
         </div>
-    </section>
+
+        <div class="food-item">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="">
+            <h3>Burger</h3>
+            <p>$10</p>
+            <button class="order-btn" onclick="addToCart('Burger', 10)">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0" alt="">
+            <h3>Pasta</h3>
+            <p>$11</p>
+            <button class="order-btn" onclick="addToCart('Pasta', 11)">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086" alt="">
+            <h3>Chicken</h3>
+            <p>$14</p>
+            <button class="order-btn" onclick="addToCart('Chicken', 14)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
