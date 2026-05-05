@@ -7,34 +7,34 @@
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Food Ordering Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="cart.html">Cart</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
-    </header>
+<header>
+    <h1>Food Ordering Website</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
 
-    <!-- Cart Section -->
-    <section class="home">
-        <h2>Your Cart</h2>
+<section class="home">
+    <h2>Your Cart</h2>
 
-        <div class="food-list">
-            <div class="food-item">Pizza - $12</div>
-            <div class="food-item">Burger - $10</div>
-        </div>
+    <div id="cart-items"></div>
 
-        <h3>Total: $22</h3>
+    <h3 id="cart-total">Total: $0</h3>
 
-        <a href="checkout.html">
-    <button class="order-btn">Place Order</button>
-</a>
-    </section>
+    <a href="checkout.html">
+        <button class="order-btn">Proceed to Checkout</button>
+    </a>
+
+    <br><br>
+
+    <a href="menu.html">
+        <button class="order-btn">Back to Menu</button>
+    </a>
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>

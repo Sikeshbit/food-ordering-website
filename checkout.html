@@ -24,15 +24,15 @@
     <!-- Delivery Info -->
     <h3>Delivery Details</h3>
 
-    <input type="text" placeholder="Full Name"><br><br>
-    <input type="text" placeholder="Address"><br><br>
-    <input type="text" placeholder="Phone Number"><br><br>
+    <input type="text" id="name" placeholder="Full Name"><br><br>
+    <input type="text" id="address" placeholder="Address"><br><br>
+    <input type="text" id="phone" placeholder="Phone Number"><br><br>
 
     <!-- Payment -->
     <h3>Payment Method</h3>
 
-    <label><input type="radio" name="payment"> Cash on Delivery</label><br>
-    <label><input type="radio" name="payment"> Credit Card</label><br><br>
+    <label><input type="radio" name="payment" value="cash"> Cash on Delivery</label><br>
+    <label><input type="radio" name="payment" value="card"> Credit Card</label><br><br>
 
     <!-- Order Summary -->
     <h3>Order Summary</h3>
@@ -42,11 +42,38 @@
     <h3>Total: $22</h3>
 
     <!-- Button -->
-    <a href="tracking.html">
-        <button class="order-btn">Place Order</button>
-    </a>
+    <button class="order-btn" onclick="placeOrder()">Place Order</button>
+
+    <!-- Message -->
+    <p id="order-message"></p>
 
 </section>
+
+<!-- Script -->
+<script>
+function placeOrder() {
+    let name = document.getElementById("name").value;
+    let address = document.getElementById("address").value;
+    let phone = document.getElementById("phone").value;
+    let payment = document.querySelector('input[name="payment"]:checked');
+
+    // Simple validation (Error Prevention)
+    if (name === "" || address === "" || phone === "" || !payment) {
+        document.getElementById("order-message").innerText = "Please fill in all details!";
+        document.getElementById("order-message").style.color = "red";
+        return;
+    }
+
+    // Success message (Dialog Closure)
+    document.getElementById("order-message").innerText = "Order placed successfully 🎉";
+    document.getElementById("order-message").style.color = "green";
+
+    // Redirect after 1.5 seconds
+    setTimeout(function() {
+        window.location.href = "tracking.html";
+    }, 1500);
+}
+</script>
 
 </body>
 </html>
