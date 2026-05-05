@@ -51,32 +51,63 @@
     <div class="food-list">
 
         <div class="food-item">
-            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65" alt="">
-            <h3>Pizza</h3>
-            <p>$12</p>
-            <button class="order-btn" onclick="addToCart('Pizza', 12)">Add to Cart</button>
-        </div>
 
-        <div class="food-item">
-            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="">
-            <h3>Burger</h3>
-            <p>$10</p>
-            <button class="order-btn" onclick="addToCart('Burger', 10)">Add to Cart</button>
-        </div>
+    <div class="food-img">
+        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=600" alt="">
+        <span class="heart active" onclick="toggleHeart(this)">♥</span>
+    </div>
 
-        <div class="food-item">
-            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0" alt="">
-            <h3>Pasta</h3>
-            <p>$11</p>
-            <button class="order-btn" onclick="addToCart('Pasta', 11)">Add to Cart</button>
-        </div>
+    <h3>Pizza</h3>
+    <p class="desc">Classic cheese pizza with fresh ingredients.</p>
+    <p class="price">$12</p>
 
-        <div class="food-item">
-            <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086" alt="">
-            <h3>Chicken</h3>
-            <p>$14</p>
-            <button class="order-btn" onclick="addToCart('Chicken', 14)">Add to Cart</button>
-        </div>
+    <button class="order-btn" onclick="addToCart('Pizza', 12)">Add to Cart</button>
+</div>
+
+
+<div class="food-item">
+
+    <div class="food-img">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600" alt="">
+        <span class="heart" onclick="toggleHeart(this)">♡</span>
+    </div>
+
+    <h3>Burger</h3>
+    <p class="desc">Juicy beef burger with cheese and fresh veggies.</p>
+    <p class="price">$10</p>
+
+    <button class="order-btn" onclick="addToCart('Burger', 10)">Add to Cart</button>
+</div>
+
+
+<div class="food-item">
+
+    <div class="food-img">
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600" alt="">
+        <span class="heart" onclick="toggleHeart(this)">♡</span>
+    </div>
+
+    <h3>Pasta</h3>
+    <p class="desc">Delicious pasta with rich and creamy sauce.</p>
+    <p class="price">$11</p>
+
+    <button class="order-btn" onclick="addToCart('Pasta', 11)">Add to Cart</button>
+</div>
+
+
+<div class="food-item">
+
+    <div class="food-img">
+        <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600" alt="">
+        <span class="heart" onclick="toggleHeart(this)">♡</span>
+    </div>
+
+    <h3>Chicken</h3>
+    <p class="desc">Crispy fried chicken with amazing flavor.</p>
+    <p class="price">$14</p>
+
+    <button class="order-btn" onclick="addToCart('Chicken', 14)">Add to Cart</button>
+</div>
 
     </div>
 </section>
