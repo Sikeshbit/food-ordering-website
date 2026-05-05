@@ -63,3 +63,21 @@ nav a:hover {
 .order-btn:hover {
     background-color: #e14b4b;
 }
+/* Tracking Design */
+.tracking-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.step {
+    padding: 10px 15px;
+    background-color: #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.step.active {
+    background-color: #ff5c5c;
+    color: white;
+}
